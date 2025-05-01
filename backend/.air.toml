@@ -1,0 +1,32 @@
+# .air.toml - Clean and Docker-friendly
+
+root = "."
+tmp_dir = "tmp"
+
+[build]
+cmd = "go build -o ./tmp/main ."
+bin = "tmp/main"
+# `full_bin` isn't a boolean — this is correct usage:
+full_bin = "./tmp/main"
+delay = 1000
+stop_on_error = true
+
+[log]
+time = true
+
+[watch]
+# Watch all Go files in current directory (recursive)
+dirs = ["."]
+extensions = [".go"]
+exclude_dir = ["tmp", "vendor", "frontend/node_modules"]
+exclude_file = []
+exclude_regex = ["_test\\.go"]
+follow_symlink = true
+exclude_unchanged = true
+
+[misc]
+clean_on_exit = true
+
+[screen]
+clear_on_rebuild = true
+keep_scroll = true

@@ -1,0 +1,6 @@
+# Go folders
+/vendor
+/tmp
+
+#Go modules
+go.sum

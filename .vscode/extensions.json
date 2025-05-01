@@ -1,0 +1,19 @@
+{
+  "recommendations": [
+    "dunstontc.vscode-go-syntax",
+    "golang.go",
+    "premparihar.gotestexplorer",
+    "redhat.vscode-yaml",
+    "ipedrazas.kubernetes-snippets",
+    "damms005.devdb",
+    "ms-azuretools.vscode-docker",
+    "docker.docker",
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "github.vscode-pull-request-github",
+    "oderwat.indent-rainbow",
+    "esbenp.prettier-vscode",
+    "rvest.vs-code-prettier-eslint",
+    "mohsen1.prettify-json"
+  ]
+}
